@@ -1,0 +1,148 @@
+
+
+* {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.todo-container {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.todo-table tr td,
+.todo-table tr th {
+    border: 1px solid black;
+    transition: .5s ease;
+}
+
+.todo-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.task-input,
+.task-add-btn {
+    padding: 15px;
+}
+
+.task-input {
+    width: 50%;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(236, 236, 236);
+    border: none;
+}
+
+.todo-input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.task-add-btn {
+    font-size: 18px;
+    border: none;
+    background-color: rgb(16, 36, 216);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.task-add-btn:hover {
+    background-color: rgb(201, 162, 236);
+}
+
+.cls-btn {
+    background-color: rgb(241, 241, 34);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+.todo-list-container table tr td,
+.todo-list-container table tr th{
+    padding: 20px 10px;
+}
+
+.status-incomplete {
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background-color: tomato;
+}
+
+.status-complete {
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background-color: rgb(9, 160, 59);
+}
+
+.take-action {
+    background-color: greenyellow;
+    border: none;
+    cursor: pointer;
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.disable {
+    background-color: rgb(179, 178, 178);
+    color: rgb(230, 230, 230);
+    cursor: not-allowed;
+}
+
+.disable:hover {
+    background-color: rgb(179, 178, 178);
+}
+
+
+
+/* //01300994661 */
+
+
+
+@media screen and (max-width: 960px) {
+    .todo-container {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 660px) {
+    .todo-container {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .todo-list-container table tr th {
+        font-size: 13px;
+    }
+    
+
+    .todo-list-container table tr td {
+        font-size: 12px;
+    }
+    
+}
